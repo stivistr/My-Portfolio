@@ -5,11 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f6c711a6-fa47-45f1-9d2c-35c819cd0398" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/MyPortfolio.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myportfolio/portfolio/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myportfolio/portfolio/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myportfolio/portfolio/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myportfolio/portfolio/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/migrations/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myportfolio/portfolio/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myportfolio/portfolio/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myportfolio/portfolio/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myportfolio/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/myportfolio/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,9 +23,21 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 3
-}]]></component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;stivistr&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/stivistr/My-Portfolio.git&quot;,
+    &quot;accountId&quot;: &quot;e41b4904-67a4-48ea-9100-2958a392afc4&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="2tDFdzIZdDQiteaA5SWvjNXIyOs" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -31,12 +47,14 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "settings.editor.selected.configurable": "application.passwordSafe"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\MyPortfolio" />
       <recent name="D:\MyPortfolio\myportfolio" />
     </key>
   </component>
