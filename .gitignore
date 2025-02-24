@@ -1,0 +1,22 @@
+# created by virtualenv automatically
+*
+# Ignore PyCharm files
+.idea/
+
+# Ignore Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Ignore virtual environment
+venv/
+.venv/
+
+# Ignore database
+db.sqlite3
+
+# Ignore Django migrations (optional)
+*/migrations/
+
+# Ignore .env file
+.env
