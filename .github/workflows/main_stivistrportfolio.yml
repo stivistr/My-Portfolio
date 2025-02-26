@@ -27,15 +27,9 @@ jobs:
           pip install -r requirements.txt
 
       - name: Run Django Migrations
+        run: python manage.py migrate
         env:
-          DJANGO_SECRET_KEY: ${{ secrets.DJANGO_SECRET_KEY }}
-          DB_NAME: ${{ secrets.DB_NAME }}
-          DB_USER: ${{ secrets.DB_USER }}
-          DB_PASSWORD: ${{ secrets.DB_PASSWORD }}
-          DB_HOST: ${{ secrets.DB_HOST }}
-          DB_PORT: ${{ secrets.DB_PORT }}
-        run: |
-          python manage.py migrate
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
 
       - name: Collect static files
         run: |
