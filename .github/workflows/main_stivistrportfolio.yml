@@ -29,15 +29,13 @@ jobs:
       - name: Run Django Migrations
         run: python manage.py migrate
         env:
-          DB_NAME: ${{ secrets.DB_NAME }}
-          DB_USER: ${{ secrets.DB_USER }}
-          DB_PASSWORD: ${{ secrets.DB_PASSWORD }}
-          DB_HOST: ${{ secrets.DB_HOST }}
-          DB_PORT: ${{ secrets.DB_PORT }}
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
 
       - name: Collect static files
         run: |
           python manage.py collectstatic --noinput
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
 
       - name: Zip artifact for deployment
         run: zip release.zip ./* -r
@@ -64,21 +62,4 @@ jobs:
       - name: Download artifact from build job
         uses: actions/download-artifact@v4
         with:
-          name: python-app
 
-      - name: Unzip artifact for deployment
-        run: unzip release.zip
-
-      - name: Login to Azure
-        uses: azure/login@v2
-        with:
-          client-id: ${{ secrets.AZURE_CLIENT_ID }}
-          tenant-id: ${{ secrets.AZURE_TENANT_ID }}
-          subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
-
-      - name: Deploy to Azure Web App
-        uses: azure/webapps-deploy@v3
-        id: deploy-to-webapp
-        with:
-          app-name: 'stivistrportfolio'
-          slot-name: 'Production'
