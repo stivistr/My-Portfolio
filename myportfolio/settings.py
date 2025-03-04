@@ -83,8 +83,8 @@ WSGI_APPLICATION = 'myportfolio.wsgi.application'
 DATABASES = {
     'default': dj_database_url.config(
         default=os.getenv('DATABASE_URL'),
-        conn_max_age=600,
-        ssl_require=True
+        conn_max_age=600,  # Optional: increase connection lifespan
+        ssl_require=True,   # Ensure SSL is required for Azure PostgreSQL
     )
 }
 
