@@ -81,11 +81,17 @@ WSGI_APPLICATION = 'myportfolio.wsgi.application'
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
 DATABASES = {
-    'default': dj_database_url.config(
-        default=os.getenv('DATABASE_URL'),
-        conn_max_age=600,  # Optional: increase connection lifespan
-        ssl_require=True,   # Ensure SSL is required for Azure PostgreSQL
-    )
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'portfolio_db',  # Changed from 'myportfolio_db'
+        'USER': 'myportfolio_user',
+        'PASSWORD': 'Pass1234',
+        'HOST': 'postgresql-server-stivi.postgres.database.azure.com',
+        'PORT': '5432',
+        'OPTIONS': {
+            'sslmode': 'require',
+        }
+    }
 }
 
 
